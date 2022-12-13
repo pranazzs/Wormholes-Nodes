@@ -10,3 +10,10 @@ wget -O wormholes_install.sh https://docker.wormholes.com/wormholes_install.sh &
 sudo docker ps -a
 ```
   ![image](https://user-images.githubusercontent.com/35629804/207286067-c0a97141-540f-4b62-9e68-2c9314f1469e.png)
+## 4. Check your Node version
+```
+curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"eth_version","id":64}' http://127.0.0.1:8545
+```
+**Successfully Upgrade**
+
+![image](https://user-images.githubusercontent.com/35629804/207287011-e40323ae-9292-4bf7-a07a-ab24b2fab16e.png)
